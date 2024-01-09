@@ -1,0 +1,27 @@
+{
+  "name": "example-jestjs",
+  "version": "1.0.0",
+  "description": "learn jestjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -u"
+  },
+  "author": "Sammy Guttman",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.11",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "react-test-renderer": "^18.2.0",
+    "ts-jest": "^29.1.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
