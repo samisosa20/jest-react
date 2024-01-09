@@ -17,6 +17,8 @@ it('changes the class when hovered', () => {
   // re-rendering
   tree = component.toJSON();
   expect(tree).toMatchSnapshot();
+  expect(tree.props.className).not.toBe('normal');
+  expect(tree.props.className).toBe('hovered');
 
   // manually trigger the callback
   renderer.act(() => {
@@ -25,4 +27,6 @@ it('changes the class when hovered', () => {
   // re-rendering
   tree = component.toJSON();
   expect(tree).toMatchSnapshot();
+  expect(tree.props.className).toBe('normal');
+  expect(tree.props.className).not.toBe('hovered');
 });
